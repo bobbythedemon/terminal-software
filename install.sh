@@ -63,7 +63,7 @@ install_other() {
     case "$DISTRO" in
         debian|ubuntu|linuxmint)
             sudo apt-get update
-            sudo apt-get install -y python3 python3-urwid 2>/dev/null || sudo apt-get install -y python3
+            sudo apt-get install -y python3
             ;;
         fedora|rhel|centos)
             sudo dnf install -y python3
