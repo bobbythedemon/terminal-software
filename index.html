@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Software - Package Installer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .subtitle { color: #a0a0a0; margin-bottom: 40px; font-size: 1.1em; }
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 15px 0;
+            text-align: left;
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+        }
+        .feature-icon { font-size: 1.5em; }
+        .install-box {
+            background: linear-gradient(135deg, #0f3460, #16213e);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        .install-box h2 { margin-bottom: 15px; color: #4ade80; }
+        code {
+            background: #000;
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: block;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.95em;
+            overflow-x: auto;
+            word-break: break-all;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #4ade80;
+            color: #1a1a2e;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(74,222,128,0.4);
+        }
+        .supported {
+            margin-top: 30px;
+            color: #808080;
+            font-size: 0.9em;
+        }
+        .supported span {
+            background: rgba(255,255,255,0.1);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 3px;
+            display: inline-block;
+        }
+        footer {
+            margin-top: 40px;
+            color: #606060;
+            font-size: 0.85em;
+        }
+        a { color: #4ade80; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Terminal Software</h1>
+        <p class="subtitle">A beautiful TUI package manager installer</p>
+
+        <div class="feature">
+            <span class="feature-icon">↑↓</span>
+            <span>Arrow key navigation for browsing packages</span>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">📦</span>
+            <span>View package details before installing</span>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">📊</span>
+            <span>Progress bar with download speed & ETA</span>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">🔧</span>
+            <span>Supports apt, dnf, pacman, zypper, xbps, apk</span>
+        </div>
+
+        <div class="install-box">
+            <h2>Quick Install</h2>
+            <code>curl -sSL YOUR-SITE.netlify.app/install.sh | bash</code>
+        </div>
+
+        <a href="terminal-software.bin" class="download-btn" download>
+            ⬇ Download .deb Package
+        </a>
+
+        <p class="supported">
+            Supported Distros:
+            <span>Ubuntu</span>
+            <span>Debian</span>
+            <span>Fedora</span>
+            <span>Arch</span>
+            <span>openSUSE</span>
+            <span>Alpine</span>
+            <span>Void</span>
+        </p>
+
+        <footer>
+            Version 1.0.0 | MIT License
+        </footer>
+    </div>
+</body>
+</html>
