@@ -3,7 +3,7 @@
 set -e
 
 REPO_NAME="terminal-software"
-BASE_URL="https://papaya-frangollo-b0ca64.netlify.app"
+BASE_URL="https://raw.githubusercontent.com/bobbythedemon/terminal-software/main"
 PKG_VERSION="1.0.0"
 PKG_NAME="terminal-software"
 
